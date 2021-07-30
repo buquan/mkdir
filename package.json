@@ -1,0 +1,26 @@
+{
+  "name": "@buquan/mkdir",
+  "version": "1.0.0",
+  "description": "create folders and files by you options, Especially when you are doing repetitive work",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "mk": "scripts/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/buquan/mkdir.git"
+  },
+  "keywords": [],
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "buquan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/buquan/mkdir/issues"
+  },
+  "homepage": "https://github.com/buquan/mkdir#readme"
+}
