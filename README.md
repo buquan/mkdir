@@ -14,7 +14,7 @@ npm i @buquan/mkdir -D 项目安装
 
 # 配置
 
-需要在根目录创建mk文件夹，创建data.js, template.js，支持写入任何文件，可查看下面🌰的data和template对应匹配规则，从此再无复制粘贴烦恼，也可集成到自己项目
+需要在根目录创建mk文件夹，mk下创建data.js, template.js，支持写入任何文件，可查看下面🌰的data和template对应匹配规则，可集成到自己项目
 
 Eg: 
 
@@ -112,7 +112,7 @@ exports.page = function ({ component, data }) {
 
 # 使用
 
- 全局安装下：(ps：a/b为指定的根目录路径)
+ 全局安装下：(ps：a/b为目标路径)
 
 ```js
 mk root=a/b
