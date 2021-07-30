@@ -1,6 +1,6 @@
 {
   "name": "@buquan/mkdir",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "create folders and files by you options, Especially when you are doing repetitive work",
   "main": "index.js",
   "scripts": {
