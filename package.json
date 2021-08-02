@@ -4,7 +4,8 @@
   "description": "create folders and files by you options, Especially when you are doing repetitive work",
   "main": "index.js",
   "scripts": {
-    "version": "auto-changelog -p && git add CHANGELOG.md",
+    "patch": "npm version patch",
+    "version": "auto-changelog -p && git add CHANGELOG.md && git commit --amend --no-edit",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
