@@ -1,23 +1,20 @@
 #! /usr/bin/env node
 const fs = require("fs");
 const path = require("path");
-
 // 获取配置
 function getOpt() {
-    //引入配置文件
-    let profileData = require("../template/data");
-    //引入文件模板
-    let template = require("../template/template");
-    if (fs.existsSync(path.resolve(process.cwd(), 'mk'))) {
-        const dataUrl = path.resolve(process.cwd(), 'mk', 'data.js');
-        const templateUrl = path.resolve(process.cwd(), 'mk', 'template.js');
-        if (fs.existsSync(dataUrl)) {
-            profileData = require(dataUrl);
-        }
-        if (fs.existsSync(templateUrl)) {
-            template = require(templateUrl);
-        }
+    const mkUrl = path.resolve(process.cwd(), 'mk');
+    const dataUrl = path.resolve(process.cwd(), 'mk', 'data.js');
+    const templateUrl = path.resolve(process.cwd(), 'mk', 'template.js');
+    if (
+        !fs.existsSync(mkUrl)
+        || !fs.existsSync(dataUrl)
+        || !fs.existsSync(templateUrl)
+    ) {
+        throw new Error('path needs to exist');
     }
+    let profileData = require(dataUrl);
+    let template = require(templateUrl);
     return {
         profileData,
         template
