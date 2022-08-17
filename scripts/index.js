@@ -1,6 +1,7 @@
 #! /usr/bin/env node
 const fs = require("fs");
 const path = require("path");
+// test
 // 获取配置
 function getOpt() {
     const mkUrl = path.resolve(process.cwd(), 'mk');
